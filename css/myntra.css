@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+/*header Block*/
+#headerBlock{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+}
+#headerBlock > article{
+    height: 80px;
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    margin: 0% auto;
+    position: fixed;
+}
+.leftBlock{
+    width: 50%; 
+    display: flex;
+    align-items: center; 
+}
+.logoBlock img{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.logoBlock{
+    width: 15%;
+}
+.leftMenuBlock{
+    width: 85%;
+}
+.leftMenuBlock > ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+.leftMenuBlock ul li a{
+    text-decoration: none;
+    color: #111;
+    padding: 20px;
+    font-weight: bolder;
+}
+.rightBlock{
+    width: 50%; 
+    display: flex;
+    align-items: center; 
+}
+.searchBlock{
+    width: 80%;
+}
+.rightMenuBlock{
+    width: 28%;
+}
+.searchBlock input{
+    width: 95%;
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 10px 50px;
+}
+.rightMenuBlock ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.rightMenuBlock ul li a{
+    text-decoration: none;
+    color: #111;
+    font-weight: bolder;
+    padding: 10px 60px;
+}
+.searchBlock span{
+    position: relative;
+}
+.searchBlock span i{
+    position: absolute;
+    top: 5px;
+    right: -30px;
+}
+/*invite block*/
+#inviteBlock{
+    background: linear-gradient(90deg,#f9f9ff,#dee8ff);
+    height: 60px;
+    width: 100%;
+}
+#inviteBlock article{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+#inviteBlock article img{
+    width: 60px;
+}
+#inviteBlock article p{
+    font-size: 14px;
+    margin: 0 20px;
+    color: #111;
+    font-weight: bold;
+    line-height: 18px;
+}
+#inviteBlock article button{
+    color: red;
+    background: transparent;
+    border: 1px solid #c9dafd;
+    border-radius: 2px;
+    padding: 5px 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*offer Block*/
+#offerBlock article{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.leftofferBlock{
+    width: 30%;
+}
+.middleofferBlock1, .middleofferBlock2{
+    width: 30%;
+}
+.rightofferBlock{
+    width: 30%; 
+}
+#offerBlock img{
+    width: 100%;
+}
+.leftofferBlock div,.rightofferBlock div{
+    height: 118px;
+}
+.middleofferBlock1 div, .middleofferBlock2 div{
+    height: 118px;
+}
+/*dropdown menu*/
+#dropdown{
+    display:none
+}
+#dropdown article{
+    width: 1100px;
+    height: 450px;
+    display: flex;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 310px;
+}
+#dropdown article div{
+    flex: 1;
+    padding: 12px 20px;
+}
+#dropdown article div:nth-child(odd){
+    background-color: white;
+}
+#dropdown article div:nth-child(even){
+    background-color: #efefef;
+}
+#dropdown article ul{
+    list-style: none;
+    padding: 10px;
+    font-size: 13px;
+    position: relative;
+    left: -25px;
+}
+#dropdown ul li a{
+    line-height: 23px;
+}
+hr{
+    margin-left: 20px;
+}
+#dropdown .men ul li:nth-child(1) a{
+    color:  #ee5f73;
+}
+#dropdown .women ul li:nth-child(1) a{
+    color: #fb56c1;
+}
+#dropdown .kids ul li:nth-child(1) a{
+    color: #f26a10;
+}
+#dropdown .home ul li:nth-child(1) a{
+    color: #f2c210;
+}
+#dropdown .offers ul li a{
+    color: #0db7af;
+    line-height: 35px;
+}
+.leftMenuBlock ul li:hover >#dropdown{
+    display: block;
+}
+/*card Block*/
+.cardBlock img{
+    width: 100%;
+}
+.datetime img{
+    width: 97%;
+    position: relative;
+    left: 25px;
+}
+/*deal zone*/
+.dealsZone, .deals img{
+    width: 100%;
+    background-color: white;
+}
+.dealsZone, .dealoffers {
+    display: flex;
+}
+.dealsZone, .dealoffers img{
+    width: 100%;
+}
+.dealoffers img{
+    padding: 0 20px;
+    background-color: white;
+}
+/*footer Block*/
+.footer, .footerBlock{
+    display: flex;  
+    width: 80%;
+    position: relative;
+    left: 100px;
+    height: 360px;
+}
+.footerBlock1 ul li{
+    list-style: none;
+}
+.footerBlock2 ul li{
+    list-style: none;
+}
+.footerblock1, .footerBlock2 h5{
+    font-weight: bold;
+}
+.footerBlock1 ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    line-height: 20px;
+}
+.footerBlock2 ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 150px;
+    top: 30px;
+    line-height: 20px;
+}
+.footerBlock3, .p1{
+    position: relative;
+    width: 800px;
+    left: 390px;
+    top: -10px;
+}
+.footerBlock3, .playstorelinks{
+    display: flex;
+}
+.footerBlock3, .playstorelinks ul li{
+    list-style: none;
+}
+.footerBlock3, .playstorelinks img{
+    height: 40px;
+    position: relative;
+    top: 40px;
+    left: -160px;
+}
+.footerBlock3a, .p2{
+   position: absolute;
+   top: 35px;
+   left: 215px;
+   width: 150px;
+}
+.footerBlock3a, .icons{
+    display: flex;
+}    
+.footerBlock3a, .img1{
+    margin-top: 70px;
+    margin-left: 215px;
+}  
+.footerBlock3a, .img2{
+    margin-top: 70px; 
+    margin-left: 20px;
+}
+.footerBlock3a, .img3{
+    margin-top: 70px; 
+    margin-left: 20px;
+} 
+.footerBlock3a, .img4{
+    margin-top: 70px; 
+    margin-left: 20px;
+}  
+.footerBlock4 img{
+    height: 50px;
+    position: relative;
+    left: -220px;
+    top: 50px;  
+}
+.footerBlock5, .p3{
+    margin-left: -200px;
+    width: 450px;
+    margin-top: 25px;
+}
+.footerBlock5, .p4{
+    margin-top: 26px;
+}
+.footerBlock5, .p5{
+    margin-top: 27px;
+}
+.popularSearch, .h5{
+    position: absolute;
+    left: 220px;
+    width: 70%;
+}
+.popularSearch, a{
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+}
+.popularSearch, .contact{
+    display: flex;
+}
+.popularSearch, .p6{
+    position: relative;
+    top: 40px;
+}
+.bold a{
+    color: blue;
+    font-weight: bold;
+}
+.p7{
+    margin-top: 35px;
+    margin-left: 520px;
+}
+.popularSearch, .address{
+    display: flex;
+}
+.p10{
+   margin-left: 450px; 
+   margin-top: 80px;
+}
+.paragraph{
+    width: 70%;
+    margin-left: 220px;
+    margin-top: 60px;
+}
+.p11{
+    font-weight: bolder;
+}
+.p12{
+    line-height: 17px;
+    font-size: 14px;
+    text-align: justify;
+}
+.p13{
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+}
